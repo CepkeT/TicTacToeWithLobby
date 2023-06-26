@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "kqOHuVRE+le7ofC/ZKOpZ+ng/cBWRgecF6fB1Jr6f58OZiRbOyzIQsx7+LP4ddaO2XG1ryuQS8jIXSKAuL2ygQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\student\\Desktop\\HW 5\\FirstWebApp\\FirstWebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\student\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.5\\microsoft.netcore.app.ref.7.0.5.nupkg.sha512",
+    "C:\\Users\\student\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.5\\microsoft.windowsdesktop.app.ref.7.0.5.nupkg.sha512",
+    "C:\\Users\\student\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.5\\microsoft.aspnetcore.app.ref.7.0.5.nupkg.sha512",
+    "C:\\Users\\student\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.5\\microsoft.netcore.app.host.win-x64.7.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

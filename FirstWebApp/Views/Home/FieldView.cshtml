@@ -1,0 +1,29 @@
+﻿@model GameInfo
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<style>
+    .fieldViewTable {
+        display:inline;
+    }
+</style>
+
+<table class="fieldViewTable">
+    @for (int rowCounter = 0; rowCounter < 3; rowCounter++)
+    {
+        <tr>
+            @for (int columnCounter = 0; columnCounter < 3; columnCounter++)
+            {
+                <td>
+                    @{
+                        var fieldCellIndex = rowCounter * 3 + columnCounter;
+                    }
+                    <span>@Model.DecodedField[fieldCellIndex]</span>
+                </td>
+            }
+        </tr>
+    }
+</table>

@@ -1,0 +1,54 @@
+﻿@model LobbyTableModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<style>
+    .gameTable {
+        width: 100%;
+        text-align:center;
+    }
+</style>
+
+
+<table class="gameTable">
+    <tr>
+        <td>
+            <span>Player X: @Model.Game.PlayerXName</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span>Player O: @Model.Game.PlayerOName</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span>Turn: Player @Model.Game.TurnPlayerSymbol</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span>Turns from start: @Model.Game.TurnNumber</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div>
+                @await Html.PartialAsync("FieldView", Model.Game)
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <form method="post">
+                <input type="hidden" name="tableGuid" value="@Model.TableGuid"/>
+                <input type="hidden" name="field" value="@Model.Game.EncodedField" />
+                <button asp-controller="Home" asp-action="EnroleTable">Хачу здеся играть насяльника!!!</button>
+            </form>
+        </td>
+    </tr>
+</table>
+

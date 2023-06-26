@@ -1,0 +1,32 @@
+﻿@model LobbyModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<style>
+    .lobbyTable{
+        width: 100%;
+    }
+    .lobbyTable tr td {
+        border:2px dotted black;
+    }
+    .lobbyTitle{
+        text-align:center;
+        width:100%;
+    }
+</style>
+
+<h1 class="lobbyTitle">Welcome "@Model.CurrentPlayerName" to tic tac toe lobby</h1>
+<table class="lobbyTable">
+    <tr>
+        @for(int counter = 0; counter < Model.Tables.Length; counter++)
+        {
+            <td>
+                @await Html.PartialAsync("LobbyTable", Model.Tables[counter])
+            </td>
+        }
+    </tr>
+</table>
+
