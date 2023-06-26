@@ -1,17 +1,15 @@
-﻿using System.Collections.Generic;
-
-namespace FirstWebApp.Models
+﻿namespace FirstWebApp.Models
 {
     public class TicTacToeModel
     {
-        public string makeMoveName { get; set; }
-        public string winnerName { get; set; }
-        public string[] boardRandom;
+        public string MakeMoveName { get; set; }
+        public string WinnerName { get; set; }
+        public string[] BoardRandom;
         public TicTacToeModel()
         {
-            makeMoveName = string.Empty;
-            winnerName = string.Empty;
-            boardRandom = new string[9] { " ", " ", " ", " ", " ", " ", " ", " ", " " };
+            MakeMoveName = string.Empty;
+            WinnerName = string.Empty;
+            BoardRandom = new string[9] { " ", " ", " ", " ", " ", " ", " ", " ", " " };
         }
     }
 }

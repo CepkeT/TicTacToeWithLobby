@@ -277,3 +277,4 @@ C:\Users\student\Desktop\HW 5\FirstWebApp\obj\Debug\net7.0\refint\FirstWebApp.dl
 C:\Users\student\Desktop\HW 5\FirstWebApp\obj\Debug\net7.0\FirstWebApp.pdb
 C:\Users\student\Desktop\HW 5\FirstWebApp\obj\Debug\net7.0\FirstWebApp.genruntimeconfig.cache
 C:\Users\student\Desktop\HW 5\FirstWebApp\obj\Debug\net7.0\ref\FirstWebApp.dll
+C:\Users\student\Desktop\HW 5\FirstWebApp\obj\Debug\net7.0\FirstWebApp.sourcelink.json

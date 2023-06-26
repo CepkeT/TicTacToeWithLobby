@@ -11,7 +11,7 @@ namespace FirstWebApp.Models
             CurrentPlayerName = currentPlayerName;
             Tables = new LobbyTableModel[3];
 
-            for (int counter = 0; counter < Tables.Length; counter++)
+            for (var counter = 0; counter < Tables.Length; counter++)
             {
                 var lobbyTabeGuid = Database.Tables.ElementAt(counter).Key;
                 Tables[counter] = new LobbyTableModel(lobbyTabeGuid);

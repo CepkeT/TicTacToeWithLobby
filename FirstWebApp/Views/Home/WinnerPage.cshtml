@@ -1,12 +1,12 @@
 ﻿@using FirstWebApp.HTMLhelpers
-@model FirstWebApp.Models.TicTacToeModel
+@model TicTacToeModel
 @{
     ViewData["Title"] = "Winner Page";
 }
 
 <div class="text-center">
-    @Html.ShowWinner(Model.winnerName)
+    @Html.ShowWinner(Model.WinnerName)
     <form method="post" asp-area="" asp-controller="Home" asp-action="Index">
-               <input type="submit" value="Restart"></input>
+               <input type="submit" value="Restart">
     </form>
 </div>

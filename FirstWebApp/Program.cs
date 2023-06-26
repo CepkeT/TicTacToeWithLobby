@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddSession(configuration =>
 {
-    configuration.IdleTimeout = TimeSpan.FromMinutes(2);
+    configuration.IdleTimeout = TimeSpan.FromMinutes(20);
     configuration.Cookie.HttpOnly = true;
     configuration.Cookie.IsEssential = true;
 });

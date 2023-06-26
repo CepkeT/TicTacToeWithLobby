@@ -21,7 +21,7 @@
 <h1 class="lobbyTitle">Welcome "@Model.CurrentPlayerName" to tic tac toe lobby</h1>
 <table class="lobbyTable">
     <tr>
-        @for(int counter = 0; counter < Model.Tables.Length; counter++)
+        @for(var counter = 0; counter < Model.Tables.Length; counter++)
         {
             <td>
                 @await Html.PartialAsync("LobbyTable", Model.Tables[counter])

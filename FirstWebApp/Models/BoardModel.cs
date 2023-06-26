@@ -2,11 +2,11 @@
 {
     public static class BoardModel
     {
-        public static TicTacToeModel boardInfo = new TicTacToeModel();
-        public static bool isX = true;
-        public static void restart()
+        public static TicTacToeModel BoardInfo = new TicTacToeModel();
+        public static bool IsX = true;
+        public static void Restart()
         {
-            boardInfo = new TicTacToeModel();
+            BoardInfo = new TicTacToeModel();
         }
     }
 }

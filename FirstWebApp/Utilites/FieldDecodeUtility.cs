@@ -16,7 +16,7 @@
             var result = new char[9];
             var toDecodeValue = encodedField;
 
-            for (int counter = 8; counter >= 0; counter--)
+            for (var counter = 8; counter >= 0; counter--)
             {
                 var encodedCell = toDecodeValue - (toDecodeValue >> 2 << 2);
                 toDecodeValue >>= 2;
@@ -29,9 +29,9 @@
 
         public static int EncodeField(char[] decodedField)
         {
-            int result = 0;
+            var result = 0;
 
-            for (int counter = 0; counter < decodedField.Length; counter++)
+            for (var counter = 0; counter < decodedField.Length; counter++)
             {
                 result <<= 2;
 

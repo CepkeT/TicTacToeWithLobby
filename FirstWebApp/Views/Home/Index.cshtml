@@ -1,13 +1,32 @@
-﻿@{
+﻿@model LoginDataModel
+@{
     ViewData["Title"] = "Registry Page";
 }
-
+<style>
+    .validate-fail {
+        color: red;
+        font-family: "BankGothic Lt BT";
+        font-size: 20px;
+        
+        text-decoration: underline;
+    }
+</style>
+<style>
+    .name-input {
+        font-family: "BankGothic Lt BT";
+        width: 200px;
+        height: 30px;
+        border: 1px solid #ccc;
+        text-decoration: underline;
+    }
+</style>
 <h2>Welcome!</h2>
 
-<form method="post" asp-area="" asp-controller="Home" asp-action="AddUser">
-        <div>
-           Hi bro! What is your brain chip name?:
+<form method="post" asp-area="" asp-controller="Home" asp-action="Index">
+    <div asp-validation-summary="All" class="validate-fail"></div>
+    <div>
+           Hi bro! What is your brain chip name?
         </div>
-        <input class="name-input" type="text" value="" id="playerName" name="playerName">
+        <input class="name-input" type="text" asp-for="PlayerName">
      <button type="submit">Start</button>
 </form>

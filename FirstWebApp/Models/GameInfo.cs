@@ -1,6 +1,5 @@
 ﻿using FirstWebApp.ServerDatabase;
 using FirstWebApp.Utilites;
-using System;
 
 namespace FirstWebApp.Models
 {
@@ -49,7 +48,7 @@ namespace FirstWebApp.Models
             var field = new char[9];
             var randomizer = new Random();
 
-            for (int counter = 0;counter < field.Length; counter++)
+            for (var counter = 0;counter < field.Length; counter++)
             {
                 field[counter] = randomizer.Next(0, 3) switch
                 {
@@ -70,29 +69,20 @@ namespace FirstWebApp.Models
 
             GenerateRandomField();
         }
+        public GameInfo(Guid playerXGuid)
+        {
+            PlayerXGuid = Guid.Empty;
+            PlayerOGuid = Guid.Empty;
+            TurnPlayerGuid = playerXGuid;
 
+            GenerateRandomField();
+        }
         public GameInfo(Guid playerXGuid, Guid playerOGuid, Guid turnPlayerGuid)
         {
             PlayerXGuid = playerXGuid;
             PlayerOGuid = playerOGuid;
             TurnPlayerGuid = turnPlayerGuid;
-
-            ///X O X
-            ///O   O
-            ///  X
-            ///  
-            ///{'X', 'O', 'X', 'O', ' ', 'O', ' ', 'X', ' '}
-            ///
-            /// x= 01
-            /// o= 10
-            ///  = 00
-            ///  
             GenerateRandomField();
-            //SetField(0b_01_10_01_10_00_10_00_01_00);
-            //SetField(new[] { 'X', 'O', 'X', 'O', ' ', 'O', ' ', 'X', 'X' });
-            //SetField(0b_01_10_01_10_00_10_00_01_01);
-
         }
-
     }
 }
